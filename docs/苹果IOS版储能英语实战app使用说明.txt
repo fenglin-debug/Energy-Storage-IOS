@@ -1,0 +1,12 @@
+由于苹果官方的限制和周期时间长问题，初期使用ios-pwa方案开发应用，以解决苹果用户的需求，未来有可能的话会上架appstore。
+苹果iOS手机版本使用方法如下：
+Safari浏览器打开： https://bess.fenglinai.com
+2.如果让输入用户名和密码，则输入
+用户名：bess
+密码：ShEURfK3r0yOPn3CMnRj
+3.点底部分享按钮 → 添加到主屏幕 → 返回桌面 → 打开储能英语实战app
+4.再次输入用户名和密码
+用户名：bess
+密码：ShEURfK3r0yOPn3CMnRj
+5.app自动下载语料库（大概5-8分钟）
+6.直接使用

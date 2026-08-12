@@ -1,0 +1,30 @@
+# Dependencies & build
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Local tooling
+.trash/
+.workbuddy/
+.DS_Store
+*.log
+vite.config.ts.timestamp-*.mjs
+
+# Generated / temp deploy packages (not source)
+deploy/package-tmp*/
+deploy/*.zip
+
+# OS
+Thumbs.db
+
+# Secrets / local auth material (never commit)
+.env
+.env.*
+*.htpasswd
+htpasswd-output.txt
+**/*id_rsa*
+**/*.pem
+
+# Optional local copies (hashed content files are the source of truth via catalog.json)
+public/content/bundled.besspack.copy
+public/content/.prepared.json

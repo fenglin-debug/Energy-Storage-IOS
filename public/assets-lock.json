@@ -1,0 +1,19 @@
+{
+  "assets": [
+    {
+      "source": "../android/app/src/main/assets/corpus/bundled.besspack",
+      "destination": "public/content/bundled.besspack",
+      "sha256": "9d9eac3c1dd22fddc5b61d3ed933a71896f528b4b3bc546bad97dd74d61764bb"
+    },
+    {
+      "source": "../android/app/src/main/assets/articles/bundled.bessarticle",
+      "destination": "public/content/bundled.bessarticle",
+      "sha256": "4b638452dc83de466a1c034ccf0d22f4a84e0e752b854220039c1649e9490439"
+    },
+    {
+      "source": "../android/core/model/src/test/resources/fsrs_golden.json",
+      "destination": "src/test/fixtures/fsrs_golden.json",
+      "sha256": "fe89974fa131b337c9a1e29f582548904d301f766f9c0054b056840e1df4259e"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-08T09:20:26.572Z",
+  "corpus": {
+    "fileName": "corpus-9d9eac3c1dd2.besspack",
+    "sha256": "9d9eac3c1dd22fddc5b61d3ed933a71896f528b4b3bc546bad97dd74d61764bb",
+    "sizeBytes": 40213710,
+    "contentVersion": "2026.07.29.bess-v3.2-andrew-unified"
+  },
+  "article": {
+    "fileName": "article-4b638452dc83.bessarticle",
+    "sha256": "4b638452dc83de466a1c034ccf0d22f4a84e0e752b854220039c1649e9490439",
+    "sizeBytes": 33784702,
+    "contentVersion": "2026.07.29.bess-v2"
+  }
+}

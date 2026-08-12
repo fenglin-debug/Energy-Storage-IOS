@@ -1,0 +1,39 @@
+{
+  "name": "bess-sales-trainer-ios-pwa",
+  "private": true,
+  "version": "0.3.1",
+  "type": "module",
+  "description": "Battery Energy Storage English Trainer — iOS installable PWA (offline parity with Android)",
+  "scripts": {
+    "prepare-assets": "node scripts/prepare-assets.mjs",
+    "predev": "node scripts/prepare-assets.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/clean-stale-build.mjs && node scripts/prepare-assets.mjs && node scripts/build-catalog.mjs",
+    "build": "tsc --noEmit && vite build",
+    "postbuild": "node scripts/clean-dist-content.mjs",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "verify-contracts": "node scripts/verify-contracts.mjs",
+    "pack:deploy": "node scripts/pack-deploy.mjs",
+    "pack:deploy-package": "node scripts/pack-deploy-package.mjs"
+  },
+  "dependencies": {
+    "dexie": "^4.0.11",
+    "fflate": "^0.8.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "fake-indexeddb": "^6.2.5",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.6",
+    "vite-plugin-pwa": "^0.21.1",
+    "vitest": "^2.1.8"
+  }
+}

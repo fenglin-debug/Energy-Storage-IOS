@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0A84FF" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+    />
+    <title>储能英语实战 · 离线</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f2f2f7;
+        --text: #1c1c1e;
+        --text-secondary: #6e6e73;
+        --brand: #0a84ff;
+        --surface: #ffffff;
+        --hairline: rgba(60, 60, 67, 0.12);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --text: #ffffff;
+          --text-secondary: #98989d;
+          --brand: #0a84ff;
+          --surface: #1c1c1e;
+          --hairline: rgba(255, 255, 255, 0.12);
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 24px;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+      }
+      .card {
+        background: var(--surface);
+        border-radius: 18px;
+        padding: 22px;
+        max-width: 340px;
+        width: 100%;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
+      }
+      h1 { font-size: 1.25rem; margin: 0 0 8px; }
+      p { color: var(--text-secondary); margin: 8px 0; font-size: 0.9rem; }
+      button {
+        min-height: 48px;
+        border-radius: 14px;
+        border: 1px solid transparent;
+        background: var(--brand);
+        color: #fff;
+        padding: 0 18px;
+        font: inherit;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .icp {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 12px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        font-size: 0.72rem;
+        color: var(--text-secondary);
+      }
+      .icp a { color: inherit; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>当前处于离线状态</h1>
+      <p>已安装的内容仍可正常学习。如需下载新语料或更新内容，请联网后重试。</p>
+      <button onclick="location.reload()">重新连接</button>
+    </div>
+    <div class="icp">
+      <a href="https://beian.miit.gov.cn" target="_blank" rel="noreferrer">沪ICP备2026026194号</a>
+      <a href="https://beian.mps.gov.cn" target="_blank" rel="noreferrer">沪公网安备31011702891887号</a>
+    </div>
+  </body>
+</html>
