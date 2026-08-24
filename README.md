@@ -1,41 +1,26 @@
-# 储能英语实战 — iOS PWA
+# 储能英语实战（iOS）
 
-Android 版的 **iOS 可安装网页应用** 复刻：React + Vite + TypeScript，完全离线学习，共用 `.besspack` / `.bessarticle` / `.bessbackup`。
+面向储能出海销售与工程师的英语实战训练。当前 iOS 版以可安装网页应用（PWA）提供：用 Safari 添加到主屏幕后，就可以像普通 App 一样从桌面打开。
 
-## 快速开始
+## 为什么现在是网页应用？
 
-```powershell
-cd ios-pwa
-npm install
-npm run dev
-```
+由于苹果官方的限制和上架周期较长，初期使用 iOS-PWA 方案开发，先满足苹果用户的使用需求。未来条件允许时，计划上架 App Store。
 
-详细安装与真机步骤见 [docs/INSTALL.md](docs/INSTALL.md)。
+## iPhone 使用方法
 
-## 目录
+1. 用 **Safari** 打开：[https://bess.fenglinai.com](https://bess.fenglinai.com)
+2. 点底部分享按钮 → **添加到主屏幕** → 返回桌面 → 打开「储能英语实战」
+3. App 会自动下载语料库（大约 5–8 分钟，请保持网络畅通，不要关掉页面）
+4. 下载完成后即可直接使用
 
-| 路径 | 说明 |
-|---|---|
-| `src/domain` | 模型、FSRS、Repository 契约 |
-| `src/data` | IndexedDB、包校验、导入、音频、备份 |
-| `src/features` | 词汇 / 情景 / 文章 / 设置 UI |
-| `src/app` | 壳、路由、启动 |
-| `public/content` | 构建期从 Android 复制的内置包 |
-| `scripts` | 资源锁定复制、合约扫描 |
+> **注意：** 如果安装失败，请先到 **设置 → Safari 浏览器**，删除历史记录（以及本站网站数据），然后重新按上面的步骤安装。这样做是为了彻底清掉上次安装失败留下的残留文件。
 
-## 脚本
+## 使用提示
 
-| 命令 | 作用 |
-|---|---|
-| `npm run prepare-assets` | 校验 SHA 并复制 Android 内置包 |
-| `npm run dev` | 本地开发 |
-| `npm run build` | 生产构建 |
-| `npm test` | 单测（含 FSRS） |
-| `npm run verify-contracts` | 禁止业务联网/录音 API |
+- 请使用 iPhone 自带的 **Safari**。「添加到主屏幕」以 Safari 为准，其他浏览器可能无法正确安装。
+- 第一次需要联网下载语料；下载完成后可以离线学习。
+- 学习进度保存在本机。清除 Safari 网站数据会丢失进度。
 
-## 铁律
+## 开发者
 
-- 运行时不发起远程 API；首启仅加载本站静态 `/content/*`
-- 不录音、不做 ASR/AI
-- 未揭示的客户原文/关键词/答案不进入 DOM
-- 导入失败不得清空学习记忆
+本地构建与源码说明见 [docs/INSTALL.md](docs/INSTALL.md)。
